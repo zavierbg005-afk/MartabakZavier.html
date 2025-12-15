@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Martabak Manis Dari Tadi</title>
+
+    <!-- CSS DIGABUNG -->
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            background-color: #ffffff;
+            color: #333;
+        }
+
+        header {
+            position: sticky;
+            top: 0;
+            background-color: #b22222;
+            color: rgb(255, 255, 255);
+            text-align: center;
+            padding: 2px 30px;
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .hero {
+            background-image: url(https://images.deliveryhero.io/image/fd-my/Products/1577089017.jpg?width=%s);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 100%;
+            text-align: center;
+            color: rgb(255, 255, 255);
+            padding: 170px 110px;
+            background-color: rgba(0, 0, 0, 0.6);
+        }
+
+        .menu {
+            text-align: center;
+            padding: 50px 20px;
+            background-color: #fff;
+        }
+
+        .menu-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .menu-item {
+            background-color: #ffe4b5;
+            border-radius: 15px;
+            width: 250px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            padding: 15px;
+            transition: transform 0.3s;
+        }
+
+        .menu-item:hover {
+            transform: scale(1.05);
+        }
+
+        .menu-item img {
+            width: 100%;
+            height: 180px;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+
+        .menu-item h3 {
+            margin: 10px 0 5px;
+            color: #b22222;
+        }
+
+        .menu-item span {
+            font-weight: bold;
+            color: #006400;
+        }
+
+        .tentang, .kontak {
+            padding: 50px 20px;
+            text-align: center;
+            background-color: #faf0e6;
+        }
+
+        footer {
+            background-color: #b22222;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        .card {
+            width: 350px;
+            margin: 40px auto;
+            background: #fffaf0;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            border: none;
+        }
+
+        .card h2 {
+            color: #b22222;
+            margin-bottom: 15px;
+        }
+
+        .card label {
+            font-weight: bold;
+            color: #333;
+        }
+
+        .card input,
+        .card select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            font-size: 15px;
+            outline: none;
+        }
+
+        .card input:focus,
+        .card select:focus {
+            border-color: #b22222;
+            box-shadow: 0 0 5px rgba(178,34,34,0.5);
+        }
+
+        .card button {
+            width: 100%;
+            padding: 12px;
+            background-color: #b22222;
+            border: none;
+            color: white;
+            font-size: 16px;
+            border-radius: 10px;
+            margin-top: 10px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .card button:hover {
+            background-color: #8b1a1a;
+        }
+
+        #hasil {
+            margin-top: 15px;
+            padding: 10px;
+            background: #fff5e1;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Martabak Manis Dari Tadi</h1>
+        <nav>
+            <ul>
+                <li><a href="#beranda">Beranda</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#tentang">Tentang</a></li>
+                <li><a href="#kontak">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="beranda" class="hero">
+        <h2>Selamat Datang di Martabak Dari Tadi</h2>
+        <p>Rasanya Manis dan Lezat Sekali!!!!!!!</p>
+    </section>
+
+    <section id="menu" class="menu">
+        <h2>Menu Favorit Kami</h2>
+        <div class="menu-container">
+            <div class="menu-item">
+                <img src="https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/577b36cf-47fc-4025-bb06-026e19f81fe7_Go-Biz_20230531_174131.jpeg">
+                <h3>Martabak Coklat Manis</h3>
+                <p>Martabak dengan isian coklat.</p>
+                <span>Rp25.000</span>
+            </div>
+
+            <div class="menu-item">
+                <img src="https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/b7b9330a-71b7-414b-8d86-e5fd26975ec4_Go-Biz_20211008_170457.jpeg">
+                <h3>Martabak Keju Manis</h3>
+                <p>Martabak dengan isian keju.</p>
+                <span>Rp25.000</span>
+            </div>
+
+            <div class="menu-item">
+                <img src="https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/0e85de0d-7483-4374-bbac-b359fc8bb062_Go-Biz_20240827_094155.jpeg">
+                <h3>Martabak Kacang</h3>
+                <p>Martabak dengan isian kacang.</p>
+                <span>Rp25.000</span>
+            </div>
+        </div>
+    </section>
+
+    <div class="card">
+        <section id="pesan" class="kontak">
+            <h2>Pemesanan Martabak</h2>
+
+            <label>Nama:</label>
+            <input type="text" id="nama" placeholder="Masukkan nama anda"><br><br>
+
+            <label>Pilih Menu:</label>
+            <select id="pilihan">
+                <option value="coklat">Martabak Coklat</option>
+                <option value="keju">Martabak Keju</option>
+                <option value="kacang">Martabak Kacang</option>
+            </select><br><br>
+
+            <label>Jumlah:</label>
+            <input type="number" id="jumlah" min="1" value="1"><br><br>
+
+            <button onclick="pesanMartabak()">Pesan Sekarang</button>
+
+            <div id="hasil" style="margin-top:20px;"></div>
+        </section>
+    </div>
+
+    <section id="tentang" class="tentang">
+        <h2>Tentang Kami</h2>
+        <p></p>
+    </section>
+
+    <section id="kontak" class="kontak">
+        <h2>Kontak Kami</h2>
+        <p>📍 Alamat: Jln. Gereja Lama No.924</p>
+        <p>📞 Telepon: 0895621682696</p>
+        <p>📧 Email: martabakdaritadi@gmail.com</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Martabak Dari Tadi | Cita Rasa Asli Indonesia</p>
+    </footer>
+
+    <!-- JS DIGABUNG -->
+    <script>
+        const hargaMenu = {
+            coklat: 25000,
+            keju: 25000,
+            kacang: 25000
+        };
+
+        function pesanMartabak() {
+            const nama = document.getElementById("nama").value;
+            const pilihan = document.getElementById("pilihan").value;
+            const jumlah = document.getElementById("jumlah").value;
+
+            if (nama === "" || jumlah === "") {
+                alert("Silakan isi nama dan jumlah pesanan!");
+                return;
+            }
+
+            const totalHarga = hargaMenu[pilihan] * jumlah;
+
+            document.getElementById("hasil").innerHTML = `
+                <h3>Rincian Pesanan:</h3>
+                <p><strong>Nama Pemesan:</strong> ${nama}</p>
+                <p><strong>Menu:</strong> ${pilihan.toUpperCase()}</p>
+                <p><strong>Jumlah:</strong> ${jumlah}</p>
+                <p><strong>Total Harga:</strong> Rp${totalHarga.toLocaleString()}</p>
+                <p><strong>Terima kasih sudah memesan,pesanan anda akan segera dibuat!</p>
+            `;
+        }
+    </script>
+
+</body>
+</html>
